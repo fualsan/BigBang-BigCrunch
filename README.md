@@ -23,7 +23,7 @@ The algorithm is summarized below:
     (example fitness functions are give in [Solutions](#solutions))
      
 3. Calculate the center of mass with eqaution below (referred as Eq. 2 in the original paper):
-    $$x_c = \frac{\sum^N_{i=1}{\frac{1}{f_i}}x_i}{\sum^N_{i=1}{\frac{1}{f_i}}}$$
+    $$x_c = \frac{ \sum^N_{i=1}\frac{1}{f_i}x_i }{ \sum^N_{i=1}\frac{1}{f_i} }$$
 4. Update the candiate solutions with the equation below: 
 
     $$x_{new} = x_c + \frac{lr}{k}$$
