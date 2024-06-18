@@ -14,11 +14,11 @@ This repository implements an optimization method called the Big Bang–Big Crun
 The algorithm is summarized below:
 1. Generate $N$ initial candidate solutions randomly.
 
-    $$ X = \{x_1, x_2, \dots, x_N \} $$
-    $$ X \sim N(0, 1)$$
+    $$X = \{x_1, x_2, \dots, x_N \}$$
+    $$X \sim N(0, 1)$$
 
 2. Calculate the fitness for each candidate solution:
-    $$ f_i = fitness(x_i)$$
+    $$f_i = fitness(x_i)$$
 
     (example fitness functions are give in [Solutions](#solutions))
      
@@ -26,7 +26,7 @@ The algorithm is summarized below:
     $$x_c = \frac{\sum^N_{i=1}{\frac{1}{f_i}}x_i}{\sum^N_{i=1}{\frac{1}{f_i}}}$$
 4. Update the candiate solutions with the equation below: 
 
-    $$ x_{new} = x_c + \frac{lr}{k} $$
+    $$x_{new} = x_c + \frac{lr}{k}$$
 
     where $l$ is the upper limit, $r$ is a normally distributed random number and $k$ is the iteration step
 
